@@ -10,10 +10,9 @@ public class App {
         Cat be = (Cat) applicationContext.getBean("cat");
         Cat bee = (Cat) applicationContext.getBean("cat");
         System.out.println(bean.getMessage());
-        System.out.println(be.getMessage());
         System.out.println(bean == beans);
         System.out.println(bee == be);
-        
+
 
     }
 }

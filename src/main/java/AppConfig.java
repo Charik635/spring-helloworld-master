@@ -15,8 +15,6 @@ public class AppConfig {
     @Bean(name ="cat")
     @Scope(scopeName = "prototype")
     public Cat getHello() {
-        Cat cat = new Cat();
-        cat.setMessage("Hello World!");
-        return cat;
+        return new Cat();
     }
 }
